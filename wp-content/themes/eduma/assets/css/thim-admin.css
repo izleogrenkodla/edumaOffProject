@@ -1,0 +1,72 @@
+.thim-demo-browser .themes{
+	overflow: hidden;
+	position: relative;
+}
+.thim-demo-browser.overlay .themes{
+	cursor: no-drop;
+}
+.thim-demo-browser.loading .themes{
+	cursor: progress;
+}
+.thim-demo-browser.overlay .themes,
+.thim-demo-browser.loading .themes{
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.thim-demo-browser.overlay .themes:before,
+.thim-demo-browser.loading .themes:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.5);
+	z-index: 99;
+}
+.thim-choose-page-builder{
+	position: relative;
+}
+.thim-choose-page-builder select{
+	margin-left: 30px;
+}
+.thim-choose-page-builder:after{
+	color: #f56e28;
+	content: "\f463";
+	display: inline-block;
+	font: 400 20px/1 dashicons;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align: top;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 15px;
+	position: absolute;
+	left: 0;
+	bottom: 15px;
+}
+.thim-demo-browser.loading .thim-choose-page-builder:after{
+	-webkit-animation: rotation 2s infinite linear;
+	animation: rotation 2s infinite linear;
+}
+.thim-choose-page-builder{
+	clear: both;
+	margin-bottom: 25px;
+	overflow: hidden;
+	border-left: 4px solid #46b450;
+	background: #fff;
+	width: auto;
+	padding: 0px 15px 15px;
+}
+.thim-choose-page-builder select,
+.thim-choose-page-builder select:focus{
+	outline: none;
+	box-shadow: none;
+	border-color: #ddd;
+}
+/*#message.error.learn-press-message{*/
+	/*display: none;*/
+/*}*/
